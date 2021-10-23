@@ -14,22 +14,34 @@ print('|--------------------------------------|')
 print('| PERHITUNGAN KUADRAN DALAM KOORDINAT  |')
 print('|--------------------------------------|')
 
-x = int(input("Masukkan Koordinat X : "))
-y = int(input("Masukkan Koordinat Y : "))
+print('|                                      |')
+print('|                  MENU                |')
+print('| 1. Menampilkan Kuadran               |')
+print('| 2. Menampilkan Koordinat Pada Grafik |')
+print('|--------------------------------------|')
 
-if (x >0 and y >0) :
-    print("Koordinat anda berada pada : KUADRAN I")
-elif(x <0 and y >0):
-    print("Koordinat anda berada pada : KUADRAN II")
-elif(x <0 and y <0):
-    print("Koordinat anda berada pada : KUADRAN III");
-elif(x >0 and y <0):
-    print("Koordinat anda berada pada : KUADRAN IV")
-elif(x ==0 and y ==0):
-    print("Koordinat anda berada pada : TITIK PUSAT")
+pilihan = int(input("Masukkan Pilihan : "))
+if pilihan == 1:
+    x = int(input("Masukkan Koordinat X : "))
+    y = int(input("Masukkan Koordinat Y : "))
 
-plt.scatter(x, y)
-plt.scatter(0, 0)
+    if (x >0 and y >0) :
+        print("Koordinat anda berada pada : KUADRAN I")
+    elif(x <0 and y >0):
+        print("Koordinat anda berada pada : KUADRAN II")
+    elif(x <0 and y <0):
+        print("Koordinat anda berada pada : KUADRAN III");
+    elif(x >0 and y <0):
+        print("Koordinat anda berada pada : KUADRAN IV")
+    elif(x ==0 and y ==0):
+        print("Koordinat anda berada pada : TITIK PUSAT")
 
-plt.plot(-x,x and -y,y)
-plt.show()
+elif pilihan == 2:
+    x = int(input("Masukkan Koordinat X : "))
+    y = int(input("Masukkan Koordinat Y : "))
+
+    plt.scatter(x, y)
+    plt.scatter(0, 0)
+
+    plt.plot(-x,x and -y,y)
+    plt.show()
