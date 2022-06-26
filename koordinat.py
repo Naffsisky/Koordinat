@@ -13,7 +13,6 @@ print(intronama)
 print('|--------------------------------------|')
 print('| PERHITUNGAN KUADRAN DALAM KOORDINAT  |')
 print('|--------------------------------------|')
-
 print('|                                      |')
 print('|                  MENU                |')
 print('| 1. Menampilkan Kuadran               |')
